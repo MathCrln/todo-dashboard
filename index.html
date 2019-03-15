@@ -13,179 +13,187 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
-<body>
+<body class="light">
     <div id="main-container">
-        <nav>
-            <!--            <a href="#"> <i class="fas fa-user"></i></a>-->
-            <i class="fas fa-user"></i>
-            <i class="fas fa-calendar"></i>
-            <i class="fas fa-cog"></i>
-            <i class="fas fa-sign-out-alt"></i>
-        </nav>
+        <div id="level0">
+            <nav>
+                <a class="item" href="#"><i class="fas fa-user"></i></a>
+                <a class="item" href="#"> <i class="fas fa-calendar"></i></a>
+                <a class="item" href="#"> <i class="fas fa-cog"></i></a>
+                <a class="item" href="#"><i class="fas fa-sign-out-alt"></i></a>
+                <button class="item button" onclick="toggleDarkMode();"><i class="fas fa-moon fa-lg"></i></button>
+            </nav>
 
-        <section id="bloc-principal">
-            <h1>Mon tableau de bord</h1>
-            <div class="niveau2">
-                <h2 class="filter-title">Filtrer les tâches</h2>
-                <div id="filter">
-                    <ul>
-                        <li><a href="#">Tout le monde</a></li>
-                        <li><a href="#">Mes tâches</a></li>
-                        <li><a href="#">Mark</a></li>
-                        <li><a href="#">Micheline</a></li>
-                        <li><a href="#">Bidule</a></li>
-                    </ul>
-                </div>
+            <section id="level1">
+                <h1>My Dashboard</h1>
+                <div class="level2">
+                    <h2 class="filter-title">Filter my tasks</h2>
+                    <div id="filter">
+                        <ul>
+                            <li><a href="#" onclick="toggleDarkMode();">Everyone</a></li>
+                            <li><a href="#">My tasks</a></li>
+                            <li><a href="#">Vladmir Poutine</a></li>
+                            <li><a href="#">XI Jinpping</a></li>
+                            <li><a href="#">Barack Obama</a></li>
+                        </ul>
+                    </div>
 
-                <h2>To do</h2>
-                <div class="niveau3">
-                    <div class="categorie">
-                        <div class="header">
-                            <h3 class="titre-categorie">Design</h3>
-                            <div class="options"><i class="fas fa-ellipsis-v"></i></div>
+                    <h2>To do</h2>
+                    <div class="level3">
+                        <div class="category">
+                            <div class="header">
+                                <h3 class="titre-category">Design</h3>
+                                <div class="options"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                            <article class="article">
+                                <img src="img/design.jpg">
+                                <div class="article-description">
+                                    <h4 class="info titre">Make a square</h4>
+                                    <div class="infos">
+                                        <div class="info date onTime">June 16th</div>
+                                        <div class="info auteur"><i class="fas fa-user"></i></div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="article">
+                                <img src="img/design.jpg">
+                                <div class="article-description">
+
+                                    <h4 class="info titre">Make a square</h4>
+                                    <div class="infos">
+                                        <div class="info date onTime">June 16th</div>
+                                        <div class="info auteur"><i class="fas fa-user"></i></div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="nouvelleTache">
+
+                                <a href="#"><i class="fas fa-plus"></i>New task</a>
+
+                            </article>
                         </div>
-                        <article class="article">
-                            <img src="img/design.jpg">
-                            <div class="article-description">
-                                <h4 class="info titre">Faire un carré</h4>
+                        <div class="category">
+                            <div class="header">
+                                <h3 class="titre-category">Développement</h3>
+                                <div class="options"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                            <article class="tache">
+                                <img src="img/developpement.jpg">
+                                <div class="article-description">
+
+                                    <h4 class="info titre">Type on a keyboard</h4>
+                                    <div class="infos">
+                                        <div class="info date late">June 3rd</div>
+                                        <div class="info auteur round"><i class="fas fa-user"></i></div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="nouvelleTache">
+
+                                <a href="#"><i class="fas fa-plus"></i>New task</a>
+
+                            </article>
+                        </div>
+                        <div class="category">
+                            <div class="header">
+                                <h3 class="titre-category">Marketing</h3>
+                                <div class="options"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                            <article class="article">
+                                <div class="article-description">
+                                    <img src="img/marketing.jpg">
+
+                                    <h4 class="info titre">Design a square</h4>
+                                    <div class="infos">
+                                        <div class="info date onTime">June 29th</div>
+                                        <div class="info auteur"><i class="fas fa-user"></i></div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="nouvelleTache">
+
+                                <a href="#"><i class="fas fa-plus"></i>New task</a>
+
+                            </article>
+                        </div>
+                    </div>
+                    <div class="header planning">
+                        <h2>Planning</h2>
+                        <div class="elements">
+                            <div class="dev element">Design</div>
+                            <div class="design element">Développement</div>
+                            <div class="marketing element">Marketing</div>
+
+                        </div>
+                    </div>
+                    <div class="level3">
+                        <div class="planning">
+
+                            <div class="tacheAEffectuer retard">
+                                <div class="info date late">June 3rd</div>
                                 <div class="infos">
-                                    <div class="info date onTime">16 Juin</div>
-                                    <div class="info auteur"><i class="fas fa-user"></i></div>
+                                    <h4 class="titre">Taper sur son clavier</h4>
+                                    <p class="statut texte retard">En Retard</p>
                                 </div>
                             </div>
-                        </article>
-                        <article class="article">
-                            <img src="img/design.jpg">
-                            <div class="article-description">
 
-                                <h4 class="info titre">Faire un carré</h4>
+                            <div class="tacheAEffectuer enCours">
+                                <div class="info date onTime">June 16th</div>
                                 <div class="infos">
-                                    <div class="info date onTime">16 Juin</div>
-                                    <div class="info auteur"><i class="fas fa-user"></i></div>
+
+                                    <h4 class="titre">Faire un carré</h4>
+                                    <p class="statut texte enCours">En cours</p>
+                                    <p class="statut texte enCours">En cours</p>
+
                                 </div>
                             </div>
-                        </article>
-                        <article class="nouvelleTache">
-
-                            <a href="#"><i class="fas fa-plus"></i>Ajouter une tâche</a>
-
-                        </article>
-                    </div>
-                    <div class="categorie">
-                        <div class="header">
-                            <h3 class="titre-categorie">Développement</h3>
-                            <div class="options"><i class="fas fa-ellipsis-v"></i></div>
-                        </div>
-                        <article class="tache">
-                            <img src="img/developpement.jpg">
-                            <div class="article-description">
-
-                                <h4 class="info titre">Taper sur un clavier</h4>
+                            <div class="tacheAEffectuer enCours fr1">
+                                <div class="info date onTime">June 3rd</div>
                                 <div class="infos">
-                                    <div class="info date late">3 Juin</div>
-                                    <div class="info auteur round"><i class="fas fa-user"></i></div>
+
+                                    <h4 class="titre">Faire un rond :)</h4>
+                                    <p class="statut texte enCours">En cours</p>
+
                                 </div>
                             </div>
-                        </article>
-                        <article class="nouvelleTache">
-
-                            <a href="#"><i class="fas fa-plus"></i>Ajouter une tâche</a>
-
-                        </article>
-                    </div>
-                    <div class="categorie">
-                        <div class="header">
-                            <h3 class="titre-categorie">Marketing</h3>
-                            <div class="options"><i class="fas fa-ellipsis-v"></i></div>
-                        </div>
-                        <article class="article">
-                            <div class="article-description">
-                                <img src="img/marketing.jpg">
-
-                                <h4 class="info titre">Faire un carré</h4>
+                            <div class="tacheAEffectuer enCours fr1">
+                                <div class="info date onTime">June 3rd</div>
                                 <div class="infos">
-                                    <div class="info date onTime">29 Juin</div>
-                                    <div class="info auteur"><i class="fas fa-user"></i></div>
+
+                                    <h4 class="titre">Recommencer les yeux fermés</h4>
+                                    <p class="statut texte enCours">En cours</p>
+
                                 </div>
                             </div>
-                        </article>
-                        <article class="nouvelleTache">
+                            <div class="tacheAEffectuer aVenir fr1">
+                                <div class="info date onTime">June 3rd</div>
+                                <div class="infos">
 
-                            <a href="#"><i class="fas fa-plus"></i>Ajouter une tâche</a>
+                                    <h4 class="titre">Bla bla bla</h4>
+                                    <p class="statut texte enCours">Upcoming</p>
 
-                        </article>
-                    </div>
-                </div>
-                <div class="header">
-                    <h2>Planning</h2>
-                    <div class="elements">
-                        <div class="dev element">Dev</div>
-                        <div class="design element">Développement</div>
-                        <div class="marketing element">Marketing</div>
-
-                    </div>
-                </div>
-                <div class="niveau3">
-                    <div class="planning">
-
-                        <div class="tacheAEffectuer retard">
-                            <div class="info date late">3 Juin</div>
-                            <div class="infos">
-                                <h4 class="titre">Taper sur son clavier</h4>
-                                <p class="statut texte retard">En Retard</p>
+                                </div>
                             </div>
-                        </div>
+                            <div class="tacheAEffectuer aVenir">
+                                <div class="info date onTime">June 30th</div>
+                                <div class="infos">
 
-                        <div class="tacheAEffectuer enCours">
-                            <div class="info date onTime">16 Juin</div>
-                            <div class="infos">
+                                    <h4 class="titre">Formation: make a triangle :o</h4>
+                                    <p class="statut texte enCours">Upcoming</p>
 
-                                <h4 class="titre">Faire un carré</h4>
-                                <p class="statut texte enCours">En cours</p>
-                                <p class="statut texte enCours">En cours</p>
-
-                            </div>
-                        </div>
-                        <div class="tacheAEffectuer enCours fr1">
-                            <div class="info date onTime">3 Juin</div>
-                            <div class="infos">
-
-                                <h4 class="titre">Faire un rond :)</h4>
-                                <p class="statut texte enCours">En cours</p>
-
-                            </div>
-                        </div>
-                        <div class="tacheAEffectuer enCours fr1">
-                            <div class="info date onTime">3 Juin</div>
-                            <div class="infos">
-
-                                <h4 class="titre">Recommencer les yeux fermés</h4>
-                                <p class="statut texte enCours">En cours</p>
-
-                            </div>
-                        </div>
-                        <div class="tacheAEffectuer aVenir fr1">
-                            <div class="info date onTime">3 Juin</div>
-                            <div class="infos">
-
-                                <h4 class="titre">Bla bla bla</h4>
-                                <p class="statut texte enCours">À venir</p>
-
-                            </div>
-                        </div>
-                        <div class="tacheAEffectuer aVenir">
-                            <div class="info date onTime">30 Juin</div>
-                            <div class="infos">
-
-                                <h4 class="titre">Formation: faire un triangle :o</h4>
-                                <p class="statut texte enCours">À venir</p>
-
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-        </section>
+
+            </section>
+            </div>
+            <footer>
+                <p>Made with <i class="fas fa-heart"></i> by <a href="https://github.com/mathcrln/">@mathcrln</a></p>
+            </footer>
         </div>
+        <script src="js/script.js"></script>
+
 </body>
 
 </html>
