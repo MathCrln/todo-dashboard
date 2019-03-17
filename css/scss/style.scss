@@ -10,6 +10,7 @@
             @import 'fonts';
             @import 'colors';
             @import 'sizes';
+            @import 'light-mode';
             body {
                 font-family: $primary-font;
             }
@@ -31,28 +32,30 @@
             
             nav {
                 width: 10%;
+                min-width: 50px;
+                max-width: 150px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
                 // position: relative;
-                background: #FFFFFF;
                 border-radius: $radius4;
                 height: 600px;
                 .item {
                     display: flex;
                     align-items: center;
-                    color: #777F88;
+                    color: inherit;
                     margin: auto;
                     border-radius: 60%;
                     padding: 12%;
-                    &:hover {
-                        background: $blue;
-                        color: white;
-                    }
                     &.button {
                         border: none;
                         padding: 15%;
+                        background: none;
+                    }
+                    &:hover {
+                        background: $blue;
+                        color: white;
                     }
                     &:hover::before {
                         content: "";
@@ -103,9 +106,8 @@
             }
             /* *************** CENTRAL ****************/
             
-            div.level2 {
-                padding: 50px;
-                background: $white;
+            div#level2 {
+                padding: $xl;
                 border-radius: $radius4;
                 margin-right: $xl;
             }
@@ -127,16 +129,15 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-bottom: 20px;
-                margin-top: 15px;
+                padding-bottom: $m;
+                margin-top: $m;
             }
             
             div.category {
-                background: #FAFBFC;
                 width: calc(100% / 3);
                 box-sizing: border-box;
                 border-radius: $radius4;
-                border: 1px solid #F0F3F4;
+                padding: $m;
                 &:not(:last-child) {
                     margin-right: 20px;
                 }
@@ -144,17 +145,17 @@
                     color: #777F88;
                 }
                 article {
-                    border: 1px solid #F0F3F4;
+                    // border: 1px solid #F0F3F4;
                     border-radius: $radius4;
-                    margin-left: 15px;
-                    margin-right: 15px;
-                    margin-bottom: 15px;
                     background: white;
+                    &:not(:last-child) {
+                        margin-bottom: $m;
+                    }
                     &.nouvelleTache {
                         text-align: center;
                         color: #777F88;
                         font-size: 14px;
-                        padding: 15px;
+                        padding: $m;
                         text-decoration: none;
                         a {
                             text-decoration: none;
@@ -165,9 +166,6 @@
                         }
                         img {
                             max-width: 100%;
-                        }
-                        div.article-description {
-                            background: white;
                         }
                     }
                 }
@@ -220,10 +218,10 @@
             
             footer {
                 text-align: center;
-                padding-bottom: 1%;
+                margin: 2% 0%;
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: inherit;
                 }
                 .fa-heart {
                     color: rgb(160, 18, 18);
@@ -290,9 +288,11 @@
             .tacheAEffectuer {
                 border-right: 1px solid #F0F3F4;
                 margin-top: 0;
-                margin-bottom: 15px;
                 box-sizing: border-box;
                 position: relative;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
             }
             
             div.tacheAEffectuer {
@@ -327,112 +327,8 @@
             p.texte.enCours {
                 color: #777F88;
             }
-            /* ******************************  DARK MODE ****************************** */
             
-            .trueBlack {
-                background: $trueBlack;
-            }
-            
-            .dark {
-                background: $dark;
-            }
-            
-            .white {
-                color: white;
-            }
-            
-            .red {
-                color: red;
-            }
-            /* ******************************  RESPONSIVE ****************************** */
-            
-            @media screen and (max-width: 1000px) {
-                // Tablets
-            }
-            
-            @media screen and (max-width: 650px) {
-                // Mobile
-                body,
-                div#main-container,
-                nav,
-                div.category,
-                div#level0,
-                section#level1,
-                div.level2,
-                div.level3,
-                {
-                    padding: 0;
-                    margin: 0;
-                    box-sizing: border-box;
-                }
-                #level0 {
-                    display: block;
-                    box-sizing: border-box;
-                }
-                section#level1 {
-                    text-align: center;
-                }
-                div.level2 {
-                    div.level3 {
-                        margin: 0% 2%;
-                    }
-                    width: 100%;
-                    padding: 1%;
-                    box-sizing: border-box;
-                    #filter ul {
-                        width: 100%;
-                        flex-wrap: wrap;
-                        // flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        li {
-                            margin-top: 3%;
-                            margin-right: 3%;
-                        }
-                    }
-                }
-                div.header {
-                    justify-content: center;
-                    .options {
-                        display: none;
-                    }
-                    &.planning {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-                div.category article {
-                    div.infos {
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        .date,
-                        .auteur {
-                            margin-left: 0;
-                            margin-right: 0;
-                        }
-                    }
-                }
-                div.level3 {
-                    flex-direction: column;
-                    justify-content: space-between;
-                    box-sizing: border-box;
-                    .category {
-                        width: 100%;
-                        margin-top: 5%;
-                    }
-                }
-                #main-container {
-                    position: relative;
-                }
-                nav {
-                    display: none;
-                    // flex-direction: row;
-                    // position: absolute;
-                    // bottom: 0;
-                    // width: 100vw;
-                    // height: 5%;
-                    // background: $blue;
-                    // z-index: 1;
-                }
-            }
+            // Importing Dark Mode
+            @import 'dark-mode';
+            // Importing Responsive
+            @import 'responsive';
