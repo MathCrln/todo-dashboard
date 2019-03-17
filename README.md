@@ -33,7 +33,7 @@ _Hi and welcome to this very first project of mine! Entirely made in html and cs
 - [x] Added footer signature,
 - [x] Made the site responsive on mobile (under 650px),
 - [x] Drafted the basis of dark mode — click on the moon to try (the color theme is not accurate just yet, but it works!),
-- [x] Desactivated the left-menu on mobile temporarily (so I can make it fully responsive later)
+- [x] Desactivated the left-menu on mobile temporarily (so I can make it fully responsive latr
 
  
  
