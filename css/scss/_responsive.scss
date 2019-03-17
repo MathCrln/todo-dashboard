@@ -1,117 +1,118 @@
- /* ******************************  RESPONSIVE ****************************** */
- 
- @media screen and (max-width: 1000px) {
-     // Tablets
- }
- 
- @media screen and (max-width: 650px) {
-     // Mobile
-     body,
-     div#main-container,
-     nav,
-     div.category,
-     div#level0,
-     section#level1,
-     div#level2,
-     div.level3 {
-         padding: 0;
-         margin: 0;
+     /* ******************************  RESPONSIVE ****************************** */
+     
+     @media screen and (max-width: 1000px) {
+         // Tablets
      }
-     #level0 {
-         display: block;
-         box-sizing: border-box;
-     }
-     section#level1 {
-         text-align: center;
-         margin-top: $m;
-     }
-     div#level2 {
-         width: 100%;
-         padding-top: $l;
-         //  padding: 1%;
+     
+     @media screen and (max-width: 650px) {
+         // Mobile
+         body,
+         div#main-container,
+         nav,
+         div.category,
+         div#level0,
+         section#level1,
+         div#level2,
          div.level3 {
-             margin: 0% 2%;
-         }
-         #filter ul {
-             width: 100%;
-             flex-wrap: wrap;
-             // flex-direction: column;
-             align-items: center;
-             justify-content: center;
-             li {
-                 margin-top: 3%;
-                 margin-right: 3%;
-             }
-         }
-     }
-     div.header {
-         justify-content: center;
-         .options {
-             display: none;
-         }
-         &.planning-block {
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-         }
-     }
-     div.planning {
-         display: grid;
-         grid-template-columns: 1fr;
-     }
-     div.category article {
-         div.infos {
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-             .date,
-             .auteur {
-                 margin-left: 0;
-                 margin-right: 0;
-             }
-         }
-     }
-     div.level3 {
-         flex-direction: column;
-         justify-content: space-between;
-         box-sizing: border-box;
-         .category {
-             width: 100%;
-             padding: $s;
-         }
-     }
-     #level0 {
-         position: relative;
-         display: block;
-     }
-     nav {
-         display: flex;
-         flex-direction: row;
-         position: fixed;
-         bottom: 0;
-         width: 100%;
-         min-width: 100%;
-         height: 10%;
-         border-top-left-radius: 8%;
-         border-top-right-radius: 8%;
-         z-index: 1;
-         //  background: #189ED7!important;
-         .item {
-             border: none;
              padding: 0;
              margin: 0;
-             &:hover {
-                 background: none;
-                 &::before {
-                     content: none;
+         }
+         #level0 {
+             display: block;
+             box-sizing: border-box;
+         }
+         section#level1 {
+             text-align: center;
+             margin-top: $m;
+         }
+         div#level2 {
+             width: 100%;
+             padding-top: $l;
+             //  padding: 1%;
+             div.level3 {
+                 margin: 0% 2%;
+             }
+             #filter ul {
+                 width: 100%;
+                 flex-wrap: wrap;
+                 // flex-direction: column;
+                 align-items: center;
+                 justify-content: center;
+                 li {
+                     margin-top: 3%;
+                     margin-right: 3%;
                  }
              }
-             &.button {
+         }
+         div.header {
+             justify-content: center;
+             .options {
+                 display: none;
+             }
+             &.planning-block {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+             }
+         }
+         div.planning {
+             display: grid;
+             grid-template-columns: 1fr;
+         }
+         div.category article {
+             div.infos {
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+                 .date,
+                 .auteur {
+                     margin-left: 0;
+                     margin-right: 0;
+                 }
+             }
+         }
+         div.level3 {
+             flex-direction: column;
+             justify-content: space-between;
+             box-sizing: border-box;
+             .category {
+                 width: 100%;
+                 padding: $s;
+             }
+         }
+         #level0 {
+             position: relative;
+             display: block;
+         }
+         nav {
+             display: flex;
+             flex-direction: row;
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+             min-width: 100%;
+             height: 10%;
+             border-top-left-radius: 8%;
+             border-top-right-radius: 8%;
+             z-index: 1;
+             //  background: #189ED7!important;
+             .item {
                  border: none;
                  padding: 0;
-                 background: none;
+                 margin: 0;
+                 &:hover {
+                     background: none;
+                     &::before {
+                         content: none;
+                     }
+                 }
+                 &.button {
+                     border: none;
+                     padding: 0;
+                     background: none;
+                     color: inherit;
+                 }
              }
          }
      }
- }

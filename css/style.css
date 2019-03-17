@@ -468,6 +468,7 @@ div.category article div.infos .auteur {
     border: none;
     padding: 0;
     background: none;
+    color: inherit;
   }
 }
 

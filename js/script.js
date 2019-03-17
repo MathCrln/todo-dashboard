@@ -30,8 +30,7 @@ const toggleDarkMode = () => {
     }
 
     nav.classList.toggle("dark2");
-    // nav.classList.toggle("text-white");
-
+    nav.classList.toggle("white-text");
     level2.classList.toggle("dark2");
 
     footer.classList.toggle("white-text");
