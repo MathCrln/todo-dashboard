@@ -355,8 +355,7 @@ p.texte.enCours {
   color: red;
 }
 
-/* ******************************  RESPONSIVE ****************************** */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
   body,
 div#main-container,
 nav,
