@@ -8,11 +8,6 @@ _Hi and welcome to this very first project of mine! Entirely made in html and cs
 ### Here is what the website is supposed to look like on desktop: 
 ![Desktop design of the app](https://github.com/MathCrln/todo-dashboard/blob/master/design/desktop.png)
 
-### Here is what the website is supposed to look like on tablet: 
-![Desktop design of the app](https://github.com/MathCrln/todo-dashboard/blob/master/design/tablette.png)
-
-
-
 
 ## Versions Log
 
