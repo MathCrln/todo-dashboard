@@ -1,0 +1,30 @@
+// —— Importing "Quicksand", regular, medium
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+// —— Importing "Source Sans Pro", light, regular & bold
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+// —— Importing "Raleway", medium
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,600');
+// —— Importing "Chivo", light
+@import url('https://fonts.googleapis.com/css?family=Chivo');
+// —— Importing "Circe", light
+@font-face {
+    font-family: 'Circe';
+    src: url('../../fonts/circe/circe.woff');
+}
+
+// —— Importing "Segoe UI", light
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../../fonts/segoe-ui/segoeuil.ttf');
+    src: url('../../fonts/segoe-ui/segoe-ui.woff');
+    src: url('../../fonts/segoe-ui/segoe-ui-bold.woff');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Chivo|Quicksand|Raleway|Source+Sans+Pro');
+// Defining fonts variables
+$titles-font: 'Raleway',
+sans-serif;
+$numbers-font: 'Quicksand',
+sans-serif;
+$buttons: 'Raleway',
+sans-serif;

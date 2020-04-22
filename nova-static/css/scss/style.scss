@@ -1,0 +1,462 @@
+// Importing Fonts & Reset
+@import 'reset';
+@import 'fonts';
+@import 'colors';
+@import 'sizes';
+@import 'dark-mode';
+body {
+    background: $background;
+    padding-bottom: 120px;
+    font-family: $main-font;
+}
+
+body#login-page {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(155deg, rgba(2, 0, 36, 1) 0%, rgba(24, 64, 99, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+// MENU
+nav {
+    height: 102px;
+    background: $white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    a {
+        display: block;
+        color: $main-color;
+        &.is-current {
+            color: #FFCA53;
+        }
+    }
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+    z-index: -1;
+}
+
+// HEADER
+.main-title {
+    margin-top: 80px;
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: $xl;
+    font-weight: 400;
+    .boldElement {
+        font-weight: 700;
+    }
+}
+
+header .comment {
+    font-style: italic;
+    font-size: 15px;
+    width: 80%;
+    color: $main-color;
+    font-family: $main-font;
+}
+
+#weather-forecast {
+    color: $main-color;
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    #icon-and-temperature {
+        width: 10%;
+        #weather-icon {
+            font-size: 40px;
+        }
+        #weather-temperature {
+            font-size: $m;
+            display: none;
+        }
+    }
+}
+
+.comment {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+// SECTIONS
+section {
+    article {
+        border: $border-sizes solid $border-color;
+        border-radius: $border-radius;
+        background: white;
+    }
+}
+
+section {
+    .secondary-title {
+        text-align: center;
+        position: relative;
+        font-size: $xl;
+        font-family: $secondary-font;
+        margin-bottom: 3px;
+        z-index: -1;
+        &.first-page {
+            &::before,
+            &::after {
+                content: "";
+                width: $xxl;
+                height: 1px;
+                display: inline-block;
+                vertical-align: middle;
+                background: black;
+                margin: 3%;
+            }
+        }
+        &:not(.first-page) {
+            font-weight: 400;
+            font-size: $l;
+            &::before {
+                content: "";
+                width: 100px;
+                height: 1px;
+                display: block;
+                background: black;
+                margin: auto;
+                margin-bottom: 5%;
+            }
+        }
+    }
+    // Article of The Day
+    &#articleOfTheDay {
+        article {
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: $border-radius $border-radius 0px 0px;
+            }
+            .post-infos {
+                padding: 20px;
+                position: relative;
+                .post-title {
+                    font-size: 18px;
+                    color: $main-color;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                p {
+                    margin-top: 5px;
+                    margin-bottom: 30px;
+                    font-size: $m;
+                    font-style: italic;
+                    color: $border-color;
+                }
+                .post-date {
+                    font-family: $main-font;
+                    background: $main-color;
+                    font-size: $xs;
+                    border-radius: $border-radius;
+                    color: white;
+                    padding: 5px;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+    &#tasksOfTheDay {
+        margin: auto;
+        box-sizing: border-box;
+        font-family: $main-font;
+        article.task {
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 10px 0px;
+            border: 1px solid $border-color;
+            position: relative;
+            span.checkbox {
+                border: 0.5px solid $border-color;
+                border-radius: $border-radius;
+                width: 20px;
+                height: 20px;
+                display: block;
+                background: $white;
+                margin: 10px;
+            }
+            .additional-informations {
+                color: $border-color;
+                // display: flex;
+                // justify-content: space-between;
+                max-width: 60px;
+                box-sizing: border-box;
+                position: absolute;
+                right: 15px;
+                .addLocationButton,
+                .addDeadlineButton,
+                .location,
+                .deadline {
+                    margin-left: 5px;
+                }
+                .location,
+                .deadline {
+                    color: $secondary-color;
+                }
+            }
+            &.isChecked {
+                border: 0.5px solid $secondary-color;
+                color: $light-grey;
+                span.checkbox {
+                    background: $secondary-color;
+                    border: 0.5px solid $secondary-color;
+                }
+                .additional-informations {
+                    .addLocationButton,
+                    .addDeadlineButton {
+                        color: $light-grey;
+                    }
+                    .location,
+                    .deadline {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+    .task-input {
+        border: none;
+        font-family: $main-font;
+        font-size: 16px;
+        font-style: italic;
+    }
+}
+
+button.newElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: auto;
+    color: $main-color;
+    font-size: $m;
+    .plusButton {
+        margin: 10px;
+    }
+    border: $border-sizes solid $border-color;
+    border-radius: $border-radius;
+    background: white;
+}
+
+#contextual-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    #contextual-menu-button {
+        font-size: 20px;
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        color: white;
+        border: none;
+        background: $main-color;
+        z-index: 8;
+        border: 1px solid $white;
+    }
+    #contextual-menu-modale {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 178px;
+        height: 188px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3%;
+        align-items: flex-start;
+        background: $main-color;
+        border-radius: 15px;
+        z-index: 9;
+        &.hidden-by-default {
+            display: none;
+        }
+        button {
+            border: none;
+            background: none;
+            color: white;
+            font-size: $m;
+            i {
+                margin: 0 5px 0 5px;
+            }
+        }
+    }
+}
+
+.event-from-agenda {
+    display: flex;
+    align-items: center;
+    .date-of-event {
+        color: $secondary-color;
+        margin-right: 10px;
+        &::before {
+            content: "";
+            width: 3px;
+            background: $secondary-color;
+            height: 20px;
+            display: inline-block;
+            border-radius: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+            // content: "";
+            // width: $xxl;
+            // height: 1px;
+            // display: inline-block;
+            // vertical-align: middle;
+            // background: black;
+            // margin: 3%;
+        }
+    }
+    .name-of-event {
+        font-size: $m;
+        color: $main-color;
+    }
+}
+
+#notesOfTheDay {
+    article.note {
+        padding: $m $l;
+        margin-top: $l;
+        // position: relative;
+        header {
+            text-align: center;
+            color: $main-color;
+        }
+        p {
+            color: grey;
+            font-style: italic;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            span[meta-info|=location] {
+                color: $secondary-color;
+            }
+            span[meta-info|=time],
+            span[meta-action|=edit] {
+                color: $main-color;
+            }
+            span[meta-action|=delete] {
+                color: red;
+            }
+            div span:not(:first-child) {
+                margin-left: 10px;
+            }
+            // &::before {
+            //     content: "";
+            //     height: 1px;
+            //     background: $border-color;
+            //     display: block;
+            //     position: absolute;
+            //     margin: auto;
+            // }
+        }
+    }
+}
+
+#user-card {
+    padding: $m $l;
+    margin-top: $l;
+    border: $border-sizes solid $white;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    #user-picture {
+        border-radius: 50%;
+        width: 20%;
+    }
+    button {
+        border: none;
+        color: $main-color;
+        font-size: $m;
+        background: none;
+    }
+}
+
+#preferences,
+#settings {
+    h3 {
+        color: $border-color;
+        font-weight: 400;
+        font-style: italic;
+    }
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px 10px 0px;
+        border: 1px solid $white;
+        font-style: italic;
+        span {
+            margin: 10px;
+        }
+        &.is-selected {
+            color: $main-color;
+            border-color: $main-color;
+        }
+    }
+    #delete-account {
+        color: red;
+    }
+    #color-mode-toggle {
+        display: flex;
+        align-items: center;
+        div {
+            background: $white;
+            width: 60px;
+            border-radius: 50px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            span {
+                border-radius: 50%;
+                padding: 5px;
+                // vertical-align: middle;
+                // background: $main-color;
+                // color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .is-selected {
+                background: $main-color;
+                color: $white;
+                height: 100%;
+                width: 30px;
+            }
+        }
+        p {
+            color: $border-color;
+            font-style: italic;
+        }
+    }
+}
+
+@media screen and (min-width: 660px) {
+    body {
+        width: 375px;
+        margin: auto;
+    }
+}

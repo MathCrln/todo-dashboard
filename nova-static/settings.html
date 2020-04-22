@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Nova: Smile Every Morning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i|Playfair+Display:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="main-menu">
+        <a href="index.html"><i class="fas fa-cloud-sun menu-item"></i></a>
+        <a href="task.html"><i class="fas fa-calendar-times menu-item"></i></a>
+        <a href="notes.html"><i class="fas fa-edit menu-item"></i></a>
+        <a href="settings.html" class="is-current"><i class="fas fa-user-circle"></i></a>
+    </nav>
+    <div id="container">
+        <section id="user-card">
+            <img src="img/user-picture.jpg" id="user-picture">
+            <h2 id="user-name">Mathieu Céraline</h2>
+            <button><i class="fas fa-chevron-down"></i></button>
+        </section>
+        <section id="preferences">
+            <h2>Preferences</h2>
+            <div id="color-mode-toggle">
+                <div>
+                    <span class="is-selected"><i class="fas fa-moon"></i></span>
+                    <span><i class="fas fa-sun"></i></span>
+                </div>
+                <p>Switch to Dark Mode</p>
+
+            </div>
+            <h3>Favorite dark appearance</h3>
+
+            <article class="is-selected">
+                <p>Dark</p>
+            </article>
+            <article>
+                <p>Black</p>
+            </article>
+            <h3>First day of the week</h3>
+
+            <article class="is-selected">
+                <p>Monday</p>
+            </article>
+            <article>
+                <p>Sunday</p>
+            </article>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <article>
+                <span><i class="fas fa-user-circle"></i></span>
+                <p>Change Username</p>
+            </article>
+            <article>
+                <span><i class="fas fa-lock"></i></span>
+                <p>Change Password</p>
+            </article>
+            <article id="delete-account">
+                <span><i class="fas fa-times"></i></span>
+                <p> Delete Account</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <button id="light-switch" class="lightModeOn"><i class="fas fa-moon"></i></button>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

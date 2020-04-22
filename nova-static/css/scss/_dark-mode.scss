@@ -1,0 +1,63 @@
+    #light-switch {
+        font-size: 20px;
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        color: white;
+        border: none;
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+        background: $main-color;
+    }
+    
+    body.darkModeOn {
+        background: $main-color;
+    }
+    
+    body.darkModeOn header,
+    body.darkModeOn header #weather-forecast,
+    body.darkModeOn header .comment {
+        color: $white;
+    }
+    
+    // body.darkModeOn section#articleOfTheDay .secondary-title::after,
+    // body.darkModeOn section#articleOfTheDay .secondary-title::before {
+    //     background: $white;
+    // }
+    body.darkModeOn #light-switch {
+        background: $secondary-color;
+    }
+    
+    body.darkModeOn #main-menu {
+        background: $main-color;
+        border-top: 1px solid grey;
+        a:not(.is-current) {
+            color: $white;
+        }
+    }
+    
+    body.darModeOn #taskOfTheDay {
+        article.task {
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 10px 0px;
+            border: 1px solid $border-color;
+            span {
+                border-radius: $border-radius;
+                width: 20px;
+                height: 20px;
+                display: block;
+                background: $white;
+                margin: 10px;
+            }
+            .isChecked {
+                border: 0.5px solid $secondary-color;
+                color: $white;
+                span {
+                    background: $secondary-color;
+                }
+            }
+        }
+    }
