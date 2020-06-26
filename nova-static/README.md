@@ -4,8 +4,6 @@
 <p align="center">Smile Every Morning</p>
 <p align="center">Lightweight responsive dashboard displaying every morning everything you need to spend a mindful day.</p>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/mathcrln/own-projects/nova-static?color=red">
-
   <a href="https://www.linkedin.com/in/mathieu-ceraline/">
     <img alt="Made by Mathieu Céraline" src="https://img.shields.io/badge/made%20by-Mathieu%20Céraline-blue">
   </a>
