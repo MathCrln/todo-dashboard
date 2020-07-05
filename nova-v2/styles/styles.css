@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* --------- SIZES --------- */
+/* --------- FONTS Sizes & Families --------- */
+html,
+body,
+ul,
+li {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-family: Karla, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.heading {
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.secondary-title {
+  position: relative;
+  font-size: 1.8rem;
+}
+.secondary-title::before, .secondary-title::after {
+  content: "";
+  width: 2rem;
+  max-width: 100%;
+  height: 0.09rem;
+  display: inline-block;
+  vertical-align: middle;
+  background: black;
+  margin: 1rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: auto;
+  color: #184063;
+  font-family: Karla, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+.nav-item {
+  display: block;
+  color: #184063;
+}
+.nav-item.is-current {
+  color: #FFCA53;
+}
+
+/* ———— TASKLIST ———— */
+.tasklist {
+  margin: 0;
+  padding: 0;
+}
+
+.task {
+  align-items: center;
+  border: 1px solid #707070;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  margin: 0.8rem 0rem;
+  position: relative;
+  padding: 0.2rem 0;
+}
+
+.checkbox {
+  background: #FFFFFF;
+  border: 0.5px solid #707070;
+  border-radius: 7px;
+  height: 1.4rem;
+  margin: 0.5rem;
+  width: 1.4rem;
+}
+
+.edit-button {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 1rem;
+}
+
+.additional-informations {
+  color: #707070;
+  right: 2rem;
+  height: 100%;
+}
+
+.is-checked {
+  border: 0.5px solid #FFCA53;
+  color: #ADADAD;
+  text-decoration: line-through;
+}
+.is-checked .checkbox {
+  background: #FFCA53;
+  border: 0.5px solid #FFCA53;
+}
+
+#add-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 3rem;
+  border: 0.5px solid #184063;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 0;
+}
+
+.task-input {
+  height: 90%;
+  border: none;
+  color: #184063;
+  font-size: 1rem;
+  background: none;
+  box-sizing: border-box;
+}
+
+.new-task-input {
+  width: 75%;
+  padding: 1rem;
+}
+
+input.new-task-input::placeholder {
+  font-family: Karla, Arial, Helvetica, sans-serif;
+  opacity: 0.7;
+}
+
+.new-task-submit {
+  min-width: 25%;
+  height: 100%;
+  font-size: 1rem;
+  background: #184063;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin: 0;
+}
+
+#wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 900px) {
+  #wrapper {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+nav {
+  align-items: center;
+  background: #FFFFFF;
+  bottom: 0px;
+  display: flex;
+  font-size: 2rem;
+  height: 100px;
+  justify-content: space-around;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+}
+
+/*# sourceMappingURL=styles.css.map */

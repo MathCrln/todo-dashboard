@@ -1,0 +1,46 @@
+// Colors
+$background: #F0F3F4;
+$main-color: #184063;
+$secondary-color: #FFCA53;
+$white: #FFFFFF;
+$border-color: #707070;
+$light-grey: #ADADAD;
+$lightest-grey: #DCDDDD;
+$red:red;
+
+
+/* --------- SIZES --------- */
+$mobile: 600px;
+$desktop: 1440px;
+$xxl: 50px;
+$xl: 25px;
+$l: 20px;
+$m: 15px;
+$xs: 10px;
+$border-sizes: 0.5px;
+$border-radius: 7px;
+
+/* --------- FONTS Sizes & Families --------- */
+$heading-font: "Playfair Display",
+Arial,
+Helvetica,
+sans-serif;
+$body-font: Karla,
+Arial,
+Helvetica,
+sans-serif;
+
+html,
+body,
+ul,
+li {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+
+    font: {
+        family: $body-font;
+        size: 16px;
+    }
+}

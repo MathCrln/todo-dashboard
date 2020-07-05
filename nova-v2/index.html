@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i|Playfair+Display:400,700" rel="stylesheet">
+    <title>Nova | Smile everymorning</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav id="main-menu">
+            <a href="index.html" class="is-current nav-item"><i class="fas fa-cloud-sun menu-item"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-calendar-times menu-item"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-edit menu-item"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-user-circle"></i></a>
+        </nav>
+
+        <section>
+            <div class="container">
+                <header>
+                    <h2 class="heading secondary-title">Get productive</h2>
+                    <p class="subtitle">List the 3 most important tasks of the day.</p>
+                </header>
+                <ul id="task-list">
+                    <!-- <li class="task" id="task-1">
+                        <span class="checkbox"></span>
+                        <span class="task-name">Call Beyoncé</span>
+                        <span class="edit-button"><i class="fas fa-pencil-alt"></i></span>
+                    </li>
+                    <li class="task isChecked" id="task-2">
+                        <span class="checkbox"></span>
+                        <span class="task-name">Call Beyoncé</span>
+                        <span class="edit-button"><i class="fas fa-pencil-alt"></i></span>
+
+                    </li> -->
+
+                </ul>
+                <form id="add-task">
+                    <input type="text" placeholder="New Task..." class="new-task-input task-input">
+                    <button class="button new-task-submit">
+                        <span><i class="fas fa-plus"></i></span>
+                        <span>Add</span>
+                    </button>
+                </form>
+
+
+            </div>
+
+        </section>
+
+    </div>
+    <script src="./js/ui.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

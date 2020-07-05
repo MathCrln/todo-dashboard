@@ -1,0 +1,35 @@
+[{
+    "id":0,
+    "name":"Call Beyoncé",
+    "location":false,
+    "deadline": "22/10/19",
+    "isChecked": true
+ },
+ {
+    "id":1,
+    "name":"Do something new",
+    "location":"Paris",
+    "deadline": "22/10/19",
+    "isChecked":false
+ },
+ {
+    "id":2,
+    "name":"Finish Project \"Nova\"",
+    "location":"Home",
+    "deadline": "22/10/19",
+    "isChecked":false
+ },
+ {
+    "id":3,
+    "name":"A fourth, just for the fun",
+    "location":"Somewhere",
+    "deadline": "22/10/19",
+    "isChecked":true
+ },
+ {
+    "id":4,
+    "name":"A fitfh, because I like it",
+    "location":"Somewhere",
+    "deadline": "22/10/19",
+    "isChecked":false
+ }]

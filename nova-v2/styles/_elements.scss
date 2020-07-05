@@ -1,0 +1,181 @@
+// Headings
+.heading {
+    font-family: $heading-font;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.secondary-title {
+    position: relative;
+    font-size: 1.8rem;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 2rem;
+        max-width: 100%;
+        height: 0.09rem;
+        display: inline-block;
+        vertical-align: middle;
+        background: black;
+        margin: 1rem;
+    }
+}
+
+.subtitle {
+    font-size: 1rem;
+    // width: 80%;
+    margin: auto;
+    color: $main-color;
+    font-family: $body-font;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+// Navigation Item (a)
+.nav-item {
+    display: block;
+    color: $main-color;
+
+    &.is-current {
+        color: #FFCA53;
+    }
+}
+
+
+/* ———— TASKLIST ———— */
+// Task Item (div)
+.tasklist {
+    margin: 0;
+    padding: 0;
+}
+
+.task {
+    align-items: center;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: row;
+    margin: 0.8rem 0rem;
+    position: relative;
+    padding: 0.2rem 0;
+}
+
+.checkbox {
+    background: $white;
+    border: 0.5px solid $border-color;
+    border-radius: $border-radius;
+    height: 1.4rem;
+    margin: 0.5rem;
+    width: 1.4rem;
+}
+
+.edit-button {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 1rem;
+}
+
+.additional-informations {
+    color: $border-color;
+    // display: flex;
+    // justify-content: space-between;
+    // max-width: 60px;    
+    // box-sizing: border-box;    
+    // position: absolute;  
+    right: 2rem;
+    height: 100%;
+
+
+    // .addLocationButton,
+    // .addDeadlineButton,
+    // .location,
+    // .deadline {
+    //     margin-left: 5px;
+    // }
+
+    // .location,
+    // .deadline {
+    //     color: $secondary-color;
+    // }
+}
+
+
+.is-checked {
+    border: 0.5px solid $secondary-color;
+    color: $light-grey;
+    text-decoration: line-through;
+
+    .checkbox {
+        background: $secondary-color;
+        border: 0.5px solid $secondary-color;
+    }
+}
+
+// Form
+#add-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    height: 3rem;
+    border: $border-sizes solid $main-color;
+    box-sizing: border-box;
+    border-radius: $border-radius;
+    padding: 0;
+}
+
+.task-input {
+    height: 90%;
+    border: none;
+    color: $main-color;
+    font-size: 1rem;
+    background: none;
+    box-sizing: border-box;
+
+}
+
+.new-task-input {
+    width: 75%;
+    padding: 1rem;
+}
+
+input.new-task-input::placeholder {
+
+    font-family: $body-font;
+    opacity: 0.7;
+
+}
+
+.new-task-submit {
+    min-width: 25%;
+    height: 100%;
+    font-size: 1rem;
+    background: $main-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    margin: 0;
+}
+
+// .button {
+//     align-items: center;
+//     background: white;
+//     border: $border-sizes solid $border-color;
+//     border-radius: $border-radius;
+//     color: $main-color;
+//     cursor: pointer;
+//     display: flex;
+//     justify-content: space-around;
+//     margin: 2rem 0rem;
+//     margin: auto;
+//     font-size: $m;
+//     padding: 1rem;
+//     width: 9rem;
+//     text-transform: capitalize;
+// }
