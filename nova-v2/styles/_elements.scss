@@ -152,15 +152,46 @@ input.new-task-input::placeholder {
 
 }
 
+.button {
+    height: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+
+    border-radius: $border-radius;
+    margin: 1rem 0;
+}
+
 .new-task-submit {
     min-width: 25%;
     height: 100%;
     font-size: 1rem;
     background: $main-color;
     color: white;
+    cursor: pointer;
     border: none;
     border-radius: $border-radius;
     margin: 0;
+}
+
+.clear-all {
+    align-items: center;
+    background: $lightred;
+    box-sizing: border-box;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 90%;
+
+}
+
+.icon {
+    margin: 0 0.4rem;
 }
 
 // .button {
