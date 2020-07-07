@@ -13,6 +13,29 @@ li {
   font-size: 16px;
 }
 
+body.dark-mode {
+  background: #184063;
+}
+body.dark-mode .heading {
+  color: white;
+}
+body.dark-mode .subtitle {
+  color: white;
+}
+body.dark-mode .task {
+  color: white;
+}
+body.dark-mode #add-task {
+  background: white;
+}
+body.dark-mode .button-round {
+  background: #1d4d78;
+}
+body.dark-mode nav {
+  background: #1d4d78;
+  color: white;
+}
+
 .heading {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   text-align: center;
@@ -42,6 +65,23 @@ li {
   text-align: center;
 }
 
+.button-round {
+  font-size: 20px;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  position: fixed;
+  background: #184063;
+}
+
+#light-switch {
+  bottom: 120px;
+  right: 20px;
+}
+
 header {
   margin-bottom: 1.5rem;
 }
@@ -52,6 +92,11 @@ header {
 }
 .nav-item.is-current {
   color: #FFCA53;
+}
+@media screen and (min-width: 900px) {
+  .nav-item {
+    color: white;
+  }
 }
 
 /* ———— TASKLIST ———— */
@@ -200,6 +245,18 @@ nav {
   right: 0px;
   width: 100%;
   z-index: 10;
+}
+@media screen and (min-width: 900px) {
+  nav {
+    flex-direction: column;
+    width: 100px;
+    height: initial;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #184063;
+    color: white;
+  }
 }
 
 .container {

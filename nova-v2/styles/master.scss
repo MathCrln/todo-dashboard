@@ -1,4 +1,7 @@
-@import './media-queries';
 @import './base';
+@import './dark-mode';
+@import './media-queries';
 @import './elements';
+
+// Importing layouts
 @import './layouts';

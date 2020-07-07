@@ -1,0 +1,28 @@
+body.dark-mode {
+    background: $main-color;
+
+    .heading {
+        color: white;
+    }
+
+    .subtitle {
+        color: white;
+    }
+
+    .task {
+        color: white;
+    }
+
+    #add-task {
+        background: white;
+    }
+
+    .button-round {
+        background: lighten($color: $main-color, $amount: 5);
+    }
+
+    nav {
+        background: lighten($color: $main-color, $amount: 5);
+        color: white;
+    }
+}

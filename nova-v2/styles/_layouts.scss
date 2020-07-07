@@ -27,6 +27,18 @@ nav {
     width: 100%;
 
     z-index: 10;
+
+    @include query-desktops {
+        flex-direction: column;
+        width: 100px;
+        height: initial;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        background: $main-color;
+        color: white;
+    }
+
 }
 
 

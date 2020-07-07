@@ -9,3 +9,9 @@
         @content;
     }
 }
+
+@mixin query-small-screens {
+    @media screen and (max-width: 300) {
+        @content;
+    }
+}
